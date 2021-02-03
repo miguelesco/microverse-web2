@@ -9,12 +9,26 @@
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-    <h1 id="title"></h1>
-    <p id="description"></p>
-    <form id="survey-form">
-      <input type="text" id="name" required placeholder="name">
-      <input type="email" id="email" required placeholder="enter your e-mail">
-    </form>
+    <h1 id="title">Title</h1>
+    <p id="description">Description</p>
+
+    <div style="width: 50vw; margin: 0 auto;">
+
+      <form id="survey-form" >
+        <label for="name" id="name-label">Write your name</label>
+        <input type="text" id="name" name="name" required> <br>
+
+        <label for="email" id="email-label">Write your Email</label>
+        <input type="email" id="email" required ><br>
+
+        <label for="number" id="number-label">Write your number</label>
+        <input min="0" max="15" step="1" type="number" id="number" required >
+      </form>
+    </div>
+
+  
+
+    
 
     <!--
 
