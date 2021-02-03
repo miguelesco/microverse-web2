@@ -14,48 +14,65 @@
       
       <h1 id="title" style="text-align: center; margin: auto;">Title</h1>
       <p id="description" style="text-align: center;">Description</p>
+
       <form id="survey-form" >
-        <label for="name" id="name-label">Write your name</label>
-        <input type="text" id="name" name="name" required placeholder="john jonson"> <br>
+        <div class="form-group">
+          <label for="name" id="name-label">Write your name</label>
+          <input type="text" id="name" name="name" class="form-control" required placeholder="john jonson"> 
+        </div>
 
-        <label for="email" id="email-label">Write your Email</label>
-        <input type="email" id="email" required placeholder="example@mail.com" ><br>
+        <div class="form-group">
+          <label for="email" id="email-label">Write your Email</label>
+          <input type="email" id="email" required class="form-control" placeholder="example@mail.com" >
+        </div>
 
-        <label for="number" id="number-label">Write your number</label>
-        <input min="0" max="15" step="1" type="number" id="number" required placeholder="+2635353677"> <br>
+        <div class="form-group">
+          <label for="number" id="number-label">Write your number</label>
+          <input min="0" max="15" step="1" type="number" class="form-control" id="number" required placeholder="+2635353677">
+        </div>
 
-        <select name="" id="dropdown">
-          <option value="house">house</option>
-          <option value="test">test</option>
-        </select>     <br>
+        <div class="form-group">
+          <select name="" id="dropdown" class="form-control">
+            <option value="house" >house</option>
+            <option value="test">test</option>
+          </select>    
+        </div>
 
-        <label>
-          <input type="radio" name="prefer" value="hello" >
-          hello
-        </label> <br>
-        <label>
-          <input type="radio" name="prefer" value="hello1">
-          hello
-        </label> <br>
-        <label>
-          <input type="radio" name="prefer" value="hello3">
-          hello
-        </label> <br>
+        <div class="form-group">
+          <label>
+            <input type="radio" name="prefer" value="hello" class="input-radio">
+            hello
+          </label> <br>
+          <label>
+            <input type="radio" name="prefer" value="hello1" class="input-radio">
+            hello
+          </label> <br>
+          <label>
+            <input type="radio" name="prefer" value="hello3" class="input-radio">
+            hello
+          </label>
+        </div>
 
-        <label >
-          <input type="checkbox" name="test" value="test">
-          Test
-        </label> <br>
-        <label >
-          <input type="checkbox" name="test2" value="test2">
-          Test2
-        </label> <br>
+        <div class="form-group">
+          <label >
+            <input type="checkbox" name="test" value="test" class="input-checkbox">
+            Test
+          </label> <br>
+          <label >
+            <input type="checkbox" name="test2" value="test2" class="input-checkbox">
+            Test2
+          </label> 
+        </div>
 
-        <div>
-          <textarea class="input-textarea" ></textarea>
+
+        <div class="form-group">
+          <textarea class="input-textarea" placeholder="enter your comments here..."></textarea>
         </div>
       
-        <input type="submit" id="submit">
+
+        <div class="form-group">
+          <input type="submit" id="submit" class="submit-button">
+        </div>
       </form>
     </div>
 
